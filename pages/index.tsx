@@ -1,13 +1,13 @@
-import Head from "next/head";
-import { Home } from "pages/home/home";
+import Head from 'next/head'
+import Home from 'pages/alcor-home/home'
 
 export default function Index() {
   return (
     <>
       <Head>
-        <title>Home | DeltaDex</title>
+        <title>Home | Aclor Finance</title>
       </Head>
       <Home />
     </>
-  );
+  )
 }

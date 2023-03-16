@@ -5,51 +5,107 @@ import {
   CustomLink,
   HeaderLayout,
   MenuItem,
-} from "shared/ui";
-import Logo from "shared/assets/media/svg/delta_logo.svg";
-import Image from "next/image";
+} from 'shared/ui'
+import Logo from 'shared/assets/media/img/alcor-logo.png'
+import Image from 'next/image'
+
+import Telegram from 'shared/assets/media/svg/telegram.svg'
+import Twitter from 'shared/assets/media/svg/twitter.svg'
+import Medium from 'shared/assets/media/svg/medium.svg'
+import Link from 'next/link'
 
 export const Header = () => {
   return (
     <HeaderLayout>
       <Container className="flex justify-between items-center">
         <div className="w-44 lg:w-56">
-          <Image
+          {/* <Image
             src={Logo}
-            alt="Delta"
+            alt="Alcor"
             loading="lazy"
-            className="w-full h-full object-contain"
-          />
+            className="h-12 w-12 object-contain"
+          /> */}
         </div>
         <div className="relative block xl:hidden">
           <BurgerMenu>
-            <MenuItem href="https://t.me/delta_dex" className="bg-white bg-opacity-10">
-              Community
+            <MenuItem
+              href="https://twitter.com/alcor_finance"
+              className="bg-white bg-opacity-10 flex gap-6"
+            >
+              <Image
+                src={Twitter}
+                alt="Twitter"
+                loading="lazy"
+                className="h-8 w-8 object-contain"
+              />
+              <span className="my-auto">Twitter</span>
             </MenuItem>
-            <MenuItem href="https://deltadex-protocol.github.io/deltadex.github.io/" className="bg-white bg-opacity-10">
-              Docs
+            <MenuItem
+              href="https://t.me/alcor_finance"
+              className="bg-white bg-opacity-10 flex gap-6"
+            >
+              <Image
+                src={Telegram}
+                alt="Telegram"
+                loading="lazy"
+                className="h-8 w-8 object-contain fill-blue hover:scale-110"
+              />
+              <span className="my-auto">Telegram</span>
             </MenuItem>
-            <MenuItem href="https://deltadex.io/app/vanilla-options" className="bg-white bg-opacity-10">
-              Launch
+            <MenuItem
+              href="https://medium.com/@alcor.finance.defi"
+              className="bg-white bg-opacity-10 flex gap-6"
+            >
+              <Image
+                src={Medium}
+                alt="Medium"
+                loading="lazy"
+                className="h-8 w-8 object-contain fill-blue hover:scale-110"
+              />
+              <span className="my-auto">Medium</span>
             </MenuItem>
           </BurgerMenu>
         </div>
         <nav className="hidden xl:block">
           <ul className="list-none flex items-center gap-16">
             <li>
-              <CustomLink href="#community">Community</CustomLink>
+              <Link href={'https://twitter.com/alcor_finance'}>
+                <Image
+                  src={Twitter}
+                  alt="Twitter"
+                  loading="lazy"
+                  className="h-10 w-10 object-contain hover:scale-110"
+                />
+              </Link>
             </li>
             <li>
-              <CustomLink href="#docs">Docs</CustomLink>
+              <Link href={'https://t.me/alcor_finance'}>
+                <Image
+                  src={Telegram}
+                  alt="Telegram"
+                  loading="lazy"
+                  className="h-10 w-10 object-contain fill-blue hover:scale-110"
+                />
+              </Link>
             </li>
             <li>
-              <ButtonLink href="https://deltadex.io/app/vanilla-options" color="primary" variant="contained">
-                Launch
+              <Link href={'https://medium.com/@alcor.finance.defi'}>
+                <Image
+                  src={Medium}
+                  alt="Medium"
+                  loading="lazy"
+                  className="h-10 w-10 object-contain hover:scale-110"
+                />
+              </Link>
+            </li>
+            <li>
+              <ButtonLink href="" color="primary" variant="contained">
+                Join whitelist
               </ButtonLink>
             </li>
           </ul>
         </nav>
       </Container>
     </HeaderLayout>
-  );
-};
+  )
+}
