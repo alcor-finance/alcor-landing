@@ -21,10 +21,9 @@ export const Home = () => {
     <>
       <Header />
       <main>
-      <Image src={Diamond} alt='Diamond'/>
 
         <WelcomeSection />
-        {/* <div className="light-wrap relative"></div> */}
+        <div className="light-wrap relative"></div>
         <SponsorsSection />
         <ReplicateSection />
         <ManageSection />
