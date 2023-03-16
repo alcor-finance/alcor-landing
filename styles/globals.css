@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #111321;
+  overflow-x: hidden;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --header-height: 210px;
+  --advantages-grid-item-size: calc((60vw / 2) - (24px * 0.5));
+  --advantages-grid-width: calc(60vw * 1px);
+}
+
+@media (min-width: 0) {
+  :root {
+    --header-height: 105px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --header-height: 210px;
+  }
+}
+
+.section {
+  @apply relative;
+  @apply py-12 md:py-24;
+  z-index: 1000;
+}
+
+/*  */
+
+/* цвета текста*/
+.color-title-gradient {
+  background: linear-gradient(90deg, #fbfbfb 3.82%, #a680ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.color-subtitle-gradient {
+  background: linear-gradient(90deg, #c8eaf4 3.82%, #bfcaf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.color-footer-title-gradient {
+  background: linear-gradient(90deg, #fbfbfb 3.82%, #a680ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+/*  */
+
+/* задний фон */
+.plate-button {
+  background: linear-gradient(
+    111.75deg,
+    rgba(11, 11, 11, 0.1) -9%,
+    rgba(180, 134, 255, 0.1) 70.76%
+  );
+  border: 0.3px solid #4f4f4f;
+  border-radius: 5.754px;
+}
+/*  */
+
+/* всякий мусор */
+.light-wrap {
+  z-index: -1;
+  position: relative;
+}
+
+.light-wrap::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #8a5cf68e 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transform: translate(-50%, -65%);
+}

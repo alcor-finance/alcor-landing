@@ -1,0 +1,45 @@
+.light::before {
+  @apply bg-primary;
+  content: "";
+  z-index: -10;
+  position: absolute;
+  width: 512px;
+  height: 512px;
+  left: calc(var(--mouse-x) * 1px);
+  top: calc(var(--mouse-y) * 1px);
+
+  border-radius: 50%;
+  will-change: filter, opacity, transform;
+  transform: translate(-50%, -50%);
+  filter: blur(64px) opacity(0.1);
+  opacity: 0;
+  transition: 0.16s all ease;
+}
+
+.light:hover:before {
+  opacity: 1;
+  animation: rising forwards linear 0.64s;
+}
+
+.light_disabled::before {
+  opacity: 0;
+  animation: hiding forwards linear 0.32s;
+}
+
+@keyframes rising {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hiding {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
