@@ -35,8 +35,8 @@ function MainSection() {
             Uniswap-like exchange for trading options
           </Typography>
         </div>
-        <ButtonLink href="" color="primary" variant="contained">
-          Join whitelist
+        <ButtonLink href="https://bit.ly/3n27DKI" color="primary" variant="contained">
+          Join waitlist
         </ButtonLink>
       </Container>
     </section>

@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Home | Aclor Finance</title>
+        <title>Home | Alcor Finance</title>
       </Head>
       <Home />
     </>

@@ -99,8 +99,8 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <ButtonLink href="" color="primary" variant="contained">
-                Join whitelist
+              <ButtonLink href="https://bit.ly/3n27DKI" color="primary" variant="contained">
+                Join waitlist
               </ButtonLink>
             </li>
           </ul>
