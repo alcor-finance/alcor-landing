@@ -32,7 +32,7 @@ function MainSection() {
         </div>
         <div ref={h2Ref} className="w-2/3 xl:w-1/3">
           <Typography tag="h3" className="h3 text-center text-white">
-            Uniswap-like exchange for trading options
+            On-chain options trading protocol
           </Typography>
         </div>
         <ButtonLink href="https://bit.ly/3n27DKI" color="primary" variant="contained">
