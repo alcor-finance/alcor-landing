@@ -61,18 +61,6 @@ export const JoinOurCommunitySection = memo(() => {
           >
             Medium
           </ButtonLink>{" "}
-          {/* <Typography
-            tag="p"
-            className="body1 text-white text-center lg:text-start font-normal"
-          >
-            <span className="opacity-60"> Testnet: </span>ALIVE
-          </Typography> */}
-          {/* <Image
-            src={OneInch}
-            alt="OneInch"
-            className="object-contain w-3/5 -translate-x-[5%]"
-            loading="lazy"
-          /> */}
         </div>
       </RowColContainer>
     </section>
