@@ -2,17 +2,17 @@ import React from "react";
 
 import { Header } from "widgets/index-header";
 import MainSection from "./sections/main-section";
-import { SponsorsSection } from "./sections/sponsors-section/sponsors-section";
-import { ReplicateSection } from "./sections/replicate-section/replicate-section";
+import { WhatDoWeOfferSection } from "./sections/what-do-we-offer/what-do-we-offer";
+import { JoinOurCommunitySection } from "./sections/join-our-community/join-our-community";
 
 function Home() {
   return (
     <>
       <Header />
       <main>
-        {/* <MainSection /> */}
-        <SponsorsSection />
-        <ReplicateSection />
+        <MainSection />
+        <WhatDoWeOfferSection />
+        <JoinOurCommunitySection />
       </main>
     </>
   );
