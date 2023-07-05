@@ -35,7 +35,7 @@ function MainSection() {
             On-chain options trading protocol
           </Typography>
         </div>
-        <ButtonLink href="https://bit.ly/3n27DKI" color="primary" variant="contained">
+        <ButtonLink href="https://bit.ly/3n27DKI" color="secondary" variant="contained" >
           Join waitlist
         </ButtonLink>
       </Container>

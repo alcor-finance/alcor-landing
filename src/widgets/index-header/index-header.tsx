@@ -5,27 +5,32 @@ import {
   CustomLink,
   HeaderLayout,
   MenuItem,
-} from 'shared/ui'
-import Logo from 'shared/assets/media/img/alcor-logo.png'
-import Image from 'next/image'
+  Typography,
+} from "shared/ui";
+import Logo from "shared/assets/media/img/alcor-logo.png";
+import Image from "next/image";
 
-import Telegram from 'shared/assets/media/svg/telegram.svg'
-import Twitter from 'shared/assets/media/svg/twitter.svg'
-import Medium from 'shared/assets/media/svg/medium.svg'
-import Link from 'next/link'
+import Telegram from "shared/assets/media/svg/telegram.svg";
+import Twitter from "shared/assets/media/svg/twitter.svg";
+import Medium from "shared/assets/media/svg/medium.svg";
+import Link from "next/link";
 
 export const Header = () => {
   return (
     <HeaderLayout>
       <Container className="flex justify-between items-center">
-        <div className="w-44 lg:w-56">
-          {/* <Image
+        {/* <div className="w-44 lg:w-56"> */}
+        {/* <Image
             src={Logo}
             alt="Alcor"
             loading="lazy"
             className="h-12 w-12 object-contain"
           /> */}
-        </div>
+        <Typography className="text-white font-normal">
+          {" "}
+          {/* Alcor.Finance */}
+        </Typography>
+        {/* </div> */}
         <div className="relative block xl:hidden">
           <BurgerMenu>
             <MenuItem
@@ -69,7 +74,7 @@ export const Header = () => {
         <nav className="hidden xl:block">
           <ul className="list-none flex items-center gap-16">
             <li>
-              <Link href={'https://twitter.com/alcor_finance'}>
+              <Link href={"https://twitter.com/alcor_finance"}>
                 <Image
                   src={Twitter}
                   alt="Twitter"
@@ -79,7 +84,7 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href={'https://t.me/alcor_finance'}>
+              <Link href={"https://t.me/alcor_finance"}>
                 <Image
                   src={Telegram}
                   alt="Telegram"
@@ -89,7 +94,7 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href={'https://medium.com/@alcor.finance.defi'}>
+              <Link href={"https://medium.com/@alcor.finance.defi"}>
                 <Image
                   src={Medium}
                   alt="Medium"
@@ -99,13 +104,17 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <ButtonLink href="https://bit.ly/3n27DKI" color="primary" variant="contained">
-                Join waitlist
+              <ButtonLink
+                href="https://app.alcor.finance/"
+                color="primary"
+                variant="contained"
+              >
+                Open app
               </ButtonLink>
             </li>
           </ul>
         </nav>
       </Container>
     </HeaderLayout>
-  )
-}
+  );
+};
