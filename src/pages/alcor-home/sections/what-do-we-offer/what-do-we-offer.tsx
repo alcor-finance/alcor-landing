@@ -79,7 +79,7 @@ export const WhatDoWeOfferSection = memo(() => {
               tag="p"
               className="body1 text-white text-center lg:text-start font-normal"
             >
-              <span className="opacity-60"> Testnet: </span>ALIVE
+              <span className="opacity-60"> Testnet: </span>LIVE
             </Typography>
             <ButtonLink
               href="https://app.alcor.finance/"
