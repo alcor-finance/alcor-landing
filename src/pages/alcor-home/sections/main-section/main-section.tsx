@@ -30,11 +30,14 @@ function MainSection() {
             Alcor Finance
           </Typography>
         </div>
-        <div ref={h2Ref} className="w-2/3 xl:w-1/3">
+        <div ref={h2Ref} className="w-2/3 xl:w-2/3">
           <Typography tag="h3" className="h3 text-center text-white">
-            Platform for trading options on-chain
+            Decentralized and permissionless options trading protocol
           </Typography>
         </div>
+        <Typography tag="h4" className="h4 text-center text-white">
+          <span className="opacity-60"> Testnet: LIVE</span>
+        </Typography>
         <ButtonLink
           href="https://app.alcor.finance"
           color="primary"

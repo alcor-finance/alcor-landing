@@ -11,7 +11,7 @@ function Home() {
       <Header />
       <main>
         <MainSection />
-        <WhatDoWeOfferSection />
+        {/* <WhatDoWeOfferSection /> */}
         <JoinOurCommunitySection />
       </main>
     </>
